@@ -1,0 +1,577 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: #1b4332;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header nav a {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        .hero {
+            background-image: url('img/bk.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4em;
+            font-family: "Edu VIC WA NT Beginner", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            color: #081c15;
+            font-style: normal;
+        }
+        .hero p {
+            margin: 20px 0;
+            font-family: "Edu VIC WA NT Beginner", cursive;
+            font-weight: 300;
+            color: #081c15;
+            font-size: 1.5em;
+        
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #347838;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .about, .services {
+            padding: 50px;
+            text-align: center;
+        }
+        .about h2, .services h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .about p, .services p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .about-cards, .services-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: left;
+        }
+        footer {
+            background: #081c15;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .oval-button {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        background-color: #43a047;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s ease;
+}
+.oval-button:hover {
+    background-color: #081c15;
+}
+
+.oval-button .arrow-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.oval-button:hover .arrow-icon {
+    transform: translateX(5px);
+}
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+.experience-info {
+    margin-top: 20px;
+}
+
+.experience-years {
+    background-color: #aadd77;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+.experience-years h2 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.experience-years p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.experience-right {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.experience-right h3 {
+    color: rgb(121, 163, 37);
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.experience-right h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #2e2e2e;
+}
+
+.experience-right p {
+    margin: 20px 0;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.experience-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.experience-right ul li {
+    margin-bottom: 10px;
+    color: #2e2e2e;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #aadd77;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #082509;
+}
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.feature-item {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    stroke: black;
+}
+
+h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #2e2e2e;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}
+.container {
+    background-image: url('img/bc.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #d6cece;
+        }
+
+        .services-header h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: rgb(211, 204, 204);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(41, 40, 40, 0.1);
+            flex: 1;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .service-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #2a2a2a;
+        }
+
+        .service-card p {
+            font-size: 1em;
+            color: #7a7a7a;
+            line-height: 1.6;
+        }
+        footer {
+            background-image: url(img/ft.png);
+            width: 100%;
+            color: black;
+            padding: 40px 20px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+              
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            text-align: left;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: black;
+        }
+        .footer-section h4 p{
+      
+            font-size: 1.5em;
+            color: black;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .footer-section ul li::before {
+            
+            margin-right: 10px;
+            color: black;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer-section .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer-section .social-icons a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #004d33;
+            color: black;
+            padding: 10px 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-content p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .footer-right {
+            display: flex;
+        }
+
+        .footer-right a {
+            color:black;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .footer-right a:hover {
+            text-decoration: underline;
+        }
+        .footer-section img {
+            
+                display: flex;
+                align-items: center;
+                width: 40px; /* Adjust size as needed */
+                height: auto;
+                margin-right: 10px; /* Space between logo and text */
+            }
+            .footer-section h4 {
+                margin: 0;
+                font-family:"Edu VIC WA NT Beginner", cursive;
+                font-weight:bolder;
+                color: #010805;
+                font-size: 24px; /* Adjust size as needed */
+            }
+        }
+
+        /* footer styles */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+         .logo {
+            width: 50px; /* Adjust size as needed */
+            height: auto;
+        }
+        .chat-icon {
+            font-size: 24px;
+            color: #333;
+        }
+        .navbar {
+         
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            max-height: 50px;
+        }
+
+        .navbar-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-menu li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .navbar-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .navbar-menu li a:hover {
+            color: #007b5e;
+        }
+
+        .navbar-menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .navbar-menu li:hover ul {
+            display: block;
+        }
+
+        .navbar-menu li ul li {
+            margin: 0;
+        }
+
+        .navbar-menu li ul li a {
+            text-transform: none;
+            font-size: 14px;
+        }
+
+        .navbar-contact {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-contact img {
+            margin-right: 10px;
+        }
+
+        .navbar-contact a {
+            text-decoration: none;
+            color: #104432;
+            font-weight: bold;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 10px; /* Space between logo and text */
+        }
+        .logo-container h1 {
+            margin: 0;
+            font-family:"Edu VIC WA NT Beginner", cursive;
+            font-weight:bolder;
+            color: #104432;
+            font-size: 24px; /* Adjust size as needed */
+        }
+        .menu-bar{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 40px;
+            cursor: pointer;
+        }
+      @media screen and (max-width:850px) {
+        
+        .navbar{
+            padding: 0;
+        }
+        .logo-container{
+            position:absolute;
+            top: 30px;
+            left: 30px;
+        
+        }
+        .navbar-menu{
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            background-color: #081c15;
+            margin-top: -900px;
+        }
+        .navbar-menu li {
+            margin: 30px auto;
+        }
+
+      }
