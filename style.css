@@ -719,6 +719,9 @@ p {
             body{
                 width: 100%;
             }
+                 .navbar-contact{
+                display: none;
+            }
             .hero h1 {
                 font-size: 2em;
             }
