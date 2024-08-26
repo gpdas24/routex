@@ -52,19 +52,19 @@
             color: #fff;
             cursor: pointer;
         }
-        .about, .services {
+        .about{
             padding: 50px;
             text-align: center;
         }
-        .about h2, .services h2 {
+        .about h2 {
             font-size: 2em;
             margin-bottom: 20px;
         }
-        .about p, .services p {
+        .about p {
             margin-bottom: 30px;
             line-height: 1.6;
         }
-        .about-cards, .services-cards {
+        .about-cards{
             display: flex;
             justify-content: center;
             gap: 30px;
@@ -77,13 +77,7 @@
             width: 300px;
             text-align: left;
         }
-        footer {
-            background: #081c15;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
+       
         .oval-button {
         display: flex;
         align-items: center;
@@ -129,8 +123,20 @@
 .image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
 }
+
+.image-grid .image-item {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image-grid .image-item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
 
 
 .experience-info {
@@ -250,7 +256,6 @@ p {
             color: white;
             position: relative;
             width: 100%;
-            padding: 40px 20px;
             font-family: "Ubuntu", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -305,7 +310,7 @@ p {
             background-image: url(img/ft.png);
             width: 100%;
             color: black;
-            padding: 40px 20px;
+            padding: 20px ;
             font-family: "Ubuntu", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -555,107 +560,103 @@ p {
             width: 40px;
             cursor: pointer;
         }
-      @media screen and (max-width:850px) {
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         
-        .navbar{
-            padding: 0;
-        }
-        .logo-container{
-            position:absolute;
-            top: 30px;
-            left: 30px;
+            .navbar-menu {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+            }
         
+            .navbar-menu.active {
+                display: flex;
+            }
+        
+            .navbar-menu li {
+                margin: 10px 0;
+            }
+        
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+                font-size: 24px;
+            }
+        
+            .experience-section {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+        
+            .experience-right {
+                padding-left: 0;
+            }
+        
+            .services-grid {
+                flex-direction: column;
+                gap: 40px;
+            }
+        
+            .hero h1 {
+                font-size: 2.5em;
+            }
+        
+            .hero p {
+                font-size: 1.2em;
+            }
         }
-        .navbar-menu{
-            flex-direction: column;
-            width: 100%;
-            height: 100vh;
-            justify-content: center;
-            background-color: #081c15;
-            margin-top: -900px;
+        
+        @media (max-width: 480px) {
+            body{
+                width: 100%;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+        
+            .hero p {
+                font-size: 1em;
+            }
+        
+            .oval-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+          
+            .image-grid{
+                flex-direction: column;
+                gap: 20px;
+        
+            }
+            
+            .experience-years{
+                width: 50%;
+            }
+        
+            .experience-right{
+                display: flex;
+                flex-direction: column;
+            }
+            .services-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+        
+            .service-card {
+                max-width: 100%;
+            }
+        
+            .footer-container {
+                flex-direction: column;
+            }
+        
+            .footer-section {
+                margin: 20px 0;
+            }
         }
-        .navbar-menu li {
-            margin: 30px auto;
-        }
-
-      }
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-menu {
-        flex-direction: column;
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-menu.active {
-        display: flex;
-    }
-
-    .navbar-menu li {
-        margin: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-    }
-
-    .experience-section {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .experience-right {
-        padding-left: 0;
-    }
-
-    .services-grid {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    .oval-button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .services-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .service-card {
-        max-width: 100%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-    }
-
-    .footer-section {
-        margin: 20px 0;
-    }
-}
+        
+        
